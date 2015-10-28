@@ -24,6 +24,7 @@ $ find . -type f -print0 | xargs -0 du | sort -rn | head -10 | cut -f2 | xargs -
 
 ```
 $ find . -type f -name "*.*" | grep -o -E "\.[^\.]+$" | sort | uniq -c | sort -rn
+
  353 .JPG
   53 .png
   45 .mov
