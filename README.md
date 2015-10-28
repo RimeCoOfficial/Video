@@ -22,6 +22,7 @@ $ find . -type f -print0 | xargs -0 du | sort -rn | head -10 | cut -f2 | xargs -
   76M    ./snapshots/projects/weekly.1/onthisday/onthisday.tar.gz
 ```
 
+Find extentions count http://stackoverflow.com/questions/1842254/how-can-i-find-all-of-the-distinct-file-extensions-in-a-folder-hierarchy
 ```
 $ find . -type f -name "*.*" | grep -o -E "\.[^\.]+$" | sort | uniq -c | sort -rn
 
