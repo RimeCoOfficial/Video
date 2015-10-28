@@ -21,3 +21,22 @@ $ find . -type f -print0 | xargs -0 du | sort -rn | head -10 | cut -f2 | xargs -
   76M    ./snapshots/projects/weekly.2/onthisday/onthisday.tar.gz
   76M    ./snapshots/projects/weekly.1/onthisday/onthisday.tar.gz
 ```
+
+```
+$ find . -type f -name "*.*" | grep -o -E "\.[^\.]+$" | sort | uniq -c | sort -rn
+ 353 .JPG
+  53 .png
+  45 .mov
+  33 .DS_Store
+  15 .prproj
+     ...
+   2 .MXF
+   1 .xmp
+   1 .psd
+   1 .mp4
+   1 .md
+   1 .m4a
+   1 .gitignore
+   1 .gitattributes
+```
+
